@@ -1,38 +1,112 @@
-.App {
+body {
+  width: 100%;
+  height: 2rem;
   text-align: center;
+  background-color: whitesmoke;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 1.5rem;
   color: white;
+  text-align: center;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.header-item {
+  margin: .5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 4.1rem;
+  height: 4.1rem;
+}
+
+
+.cards-wrapper {
+  margin: 1rem;
+  padding-top: 1rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4rem;
+  /* border: 2px solid hotpink; */
+}
+
+.card {
+  width: 18rem;
+  box-shadow: rgb(221, 221, 221) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.flag {
+  height: 100%;
+  width: 100%;
+}
+
+.card-body {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: .5rem;
+}
+
+.card-title {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+li {
+  text-align: left;
+  width: auto;
+  list-style: none;
+}
+
+.cards:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.list {
+  list-style: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+span {
+  font-weight: lighter;
+}
+
+.footer-item {
+  text-align: center;
 }
